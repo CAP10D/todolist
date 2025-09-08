@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todolist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="add-task">
+                <input type="text" placeholder="Enter your Day" id="add-task-btn">
                 <i class="ri-add-circle-line"></i>
-                <input type="submit"  id="add-task-btn">
+
             </div>
             <div class="task-list">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>today</li>
+                    <li>today</li>
+                    <li>today</li>
+                    <li>today</li> 
+                    <li>today</li>
+                    <li>today</li>
+                    <li>today</li>
+                    <li>today</li>
+                    <li>today</li>
+                    <li>today</li>
+
                 </ul>
+                
             </div>
             <div class="profile">
-                <i class="ri-copyright-line"></i> 2025 by CodePintu
+                © 2025 by CodePintu
             </div>
         </div>
         <div class="working_space">
+            <ul>
+                <li>
+                    <div class="workspace1">
+                        <div class="delte_bar">
+                            <i class="ri-delete-bin-2-line"></i>
+                        </div>
+                        <div class="page">
+                            <div class="add-btn">
+                                <input type="submit" class="add_task" value="newTask">
+                                <i class="ri-file-add-fill"></i>
+                            </div>
+                            <div class="task-area">
+                                <ul>
+                                    <li>
+                                        <i class="ri-circle-line"></i>
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <input type="text" class="task-input" value="New Task">
+                                        <i class="ri-delete-bin-2-line"></i>
+                                        <i class="ri-pencil-line"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
+            </ul>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
