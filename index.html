@@ -4,158 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todolist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>todo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="add-task">
-                <input type="text" placeholder="Enter your Day" id="add-task-btn">
-                <i class="ri-add-circle-line"></i>
-
-            </div>
-            <div class="task-list">
-                <ul>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-                    <li>today</li>
-
-                </ul>
-
-            </div>
-            <div class="profile">
-                © 2025 by CodePintu
-            </div>
-        </div>
-        <div class="working_space">
-            <ul>
-                <li>
-                    <div class="add-btn">
-                        <input type="text" class="add_task" placeholder="Add New Task">
-                        <i class="ri-file-add-fill"></i>
-                    </div>
-                    <div class="task-area">
-                        <ul>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="ri-circle-line"></i>
-                                    <i class="ri-checkbox-circle-fill"></i>
-                                </span>
-                                <p>Task1oopppoooooo</p>
-                                <span>
-                                    <i class="ri-delete-bin-2-line"></i>
-                                    <i class="ri-pencil-line"></i>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
+        <div class="todo-app">
+            <h1>Todo List</h1>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Add a new task..." required>
+                <button type="submit" id="addBtn">Add</button>
+            </form>
+            <ul id="list">
+                <!-- <li id="todo-text"><i class="ri-checkbox-blank-circle-line" id="circle"></i>My name is pintu<i class="ri-close-fill"></i></li> -->
             </ul>
         </div>
+       
     </div>
-
+     <div class="copyright">
+            <p>© 2023 by PintCode</p>
+        </div>
     <script src="script.js"></script>
 </body>
 
